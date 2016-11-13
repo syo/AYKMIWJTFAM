@@ -1,5 +1,8 @@
 import json
 from sodapy import Socrata
+#from easygui import *
+#from Tkinter import *
+
 #from tkinter import *
 
 dataset_id = 'qbxx-ev3s'
@@ -31,5 +34,15 @@ def queryStreet(street):
 
 
 if __name__ == '__main__':
+   #streetname = enterbox("Enter street name: ", "Are You Kidding Me?")
+   '''root = Tk()
+   label = Label( root, text="Enter street name: ")
+   E = Entry(root, bd =5)
+   print E.get()
+   submit = Button(root, text ="Submit", command = getDate)
+   label.pack()
+   E.pack()
+   submit.pack(side =BOTTOM)
+   root.mainloop()'''
    queryStreet(raw_input('Enter the street you received the ticket on: ').upper())
    printResults()
