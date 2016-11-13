@@ -1,6 +1,6 @@
 # Are you kidding me? I was just there for a minute!
 
-This project will track parking tickets in Boston and look for areas where large amounts of faulty tickets are issued.
+This project will track parking tickets in Boston and look for areas where large amounts of tickets are issued.
 
 #Goals of the project:
   - [ ] Allow residents to have a resource in fighting against possible undue tickets
