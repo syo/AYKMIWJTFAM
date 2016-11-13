@@ -1,7 +1,10 @@
 from sodapy import Socrata
 
-client = Socrata("https://data.cityofboston.gov/resource/cpdb-ie6e.json", None)
+#client = Socrata(api_endpoint, app_token)
+client = Socrata('data.cityofboston.gov', None)
 
-test = client.get("ticket_loc", limit=2)
+dataset_id = 'qbxx-ev3s'
+
+test = client.get(dataset_id, limit=2)
 
 print test
