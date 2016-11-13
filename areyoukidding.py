@@ -35,6 +35,7 @@ def queryStreet(street):
 
 if __name__ == '__main__':
    #streetname = enterbox("Enter street name: ", "Are You Kidding Me?")
+   #TODO: add gui implementation
    '''root = Tk()
    label = Label( root, text="Enter street name: ")
    E = Entry(root, bd =5)
