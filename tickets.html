@@ -1,0 +1,1104 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_9d8a1fe8815a4ac4ab14fda5c412cc3c {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_9d8a1fe8815a4ac4ab14fda5c412cc3c" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_9d8a1fe8815a4ac4ab14fda5c412cc3c = L.map('map_9d8a1fe8815a4ac4ab14fda5c412cc3c', {
+                                           center:[42.350489,-71.069099],
+                                           zoom: 10,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_ff99c020149d40e08cc1bc36dc56525d = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+
+        
+        
+            
+
+            var marker_9550780a62744eb1944a28e8cb46a080 = L.marker(
+                [42.2838,-71.0913],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_2405054a41554aceb59feaeff8f6b622 = L.popup({maxWidth: '300'});
+
+            
+                var html_810d03d5f58c4b64b53c5caff2eea81e = $('         <div id="html_810d03d5f58c4b64b53c5caff2eea81e"                 style="width: 100.0%; height: 100.0%;">                 4:45:00 PM  2015-02-27T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_2405054a41554aceb59feaeff8f6b622.setContent(html_810d03d5f58c4b64b53c5caff2eea81e);
+            
+
+            marker_9550780a62744eb1944a28e8cb46a080.bindPopup(popup_2405054a41554aceb59feaeff8f6b622);
+
+            
+        
+        
+            
+
+            var marker_4383613a76a4477984c624e78eed94b0 = L.marker(
+                [42.2836,-71.0914],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_d3bd7c8bdaea47de9d7ff4e4d8688cfb = L.popup({maxWidth: '300'});
+
+            
+                var html_d76c01aa1dc74fbf9734ae88c72b4e19 = $('         <div id="html_d76c01aa1dc74fbf9734ae88c72b4e19"                 style="width: 100.0%; height: 100.0%;">                 4:44:00 PM  2015-02-27T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_d3bd7c8bdaea47de9d7ff4e4d8688cfb.setContent(html_d76c01aa1dc74fbf9734ae88c72b4e19);
+            
+
+            marker_4383613a76a4477984c624e78eed94b0.bindPopup(popup_d3bd7c8bdaea47de9d7ff4e4d8688cfb);
+
+            
+        
+        
+            
+
+            var marker_3df2dd92eebb4c6ea9c8c605d00805a3 = L.marker(
+                [42.2837,-71.092],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_5d5c7c2e1c8041d1954cc8caf131e761 = L.popup({maxWidth: '300'});
+
+            
+                var html_e3a9e87b81c34f059e2b87390df14d3f = $('         <div id="html_e3a9e87b81c34f059e2b87390df14d3f"                 style="width: 100.0%; height: 100.0%;">                 4:43:00 PM  2015-02-27T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_5d5c7c2e1c8041d1954cc8caf131e761.setContent(html_e3a9e87b81c34f059e2b87390df14d3f);
+            
+
+            marker_3df2dd92eebb4c6ea9c8c605d00805a3.bindPopup(popup_5d5c7c2e1c8041d1954cc8caf131e761);
+
+            
+        
+        
+            
+
+            var marker_49c7b8bcf6b843a6a0ff4bad88cf7759 = L.marker(
+                [42.2694,-71.0941],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_2282073827d14234a3091e81e35b60d5 = L.popup({maxWidth: '300'});
+
+            
+                var html_3a8f9ce0c92d451c86ae43d000bd887a = $('         <div id="html_3a8f9ce0c92d451c86ae43d000bd887a"                 style="width: 100.0%; height: 100.0%;">                 11:43:00 AM  2015-02-25T00:00:00 Violation 71: HP-DV PLATE Fine: $120</div>                 ')[0];
+                popup_2282073827d14234a3091e81e35b60d5.setContent(html_3a8f9ce0c92d451c86ae43d000bd887a);
+            
+
+            marker_49c7b8bcf6b843a6a0ff4bad88cf7759.bindPopup(popup_2282073827d14234a3091e81e35b60d5);
+
+            
+        
+        
+            
+
+            var marker_ad9dea0a9a894119a898460bab8f1840 = L.marker(
+                [42.2691,-71.0933],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_efb051cb190b4cddbaa922fbf4589f85 = L.popup({maxWidth: '300'});
+
+            
+                var html_fbc9ec212e9e44e0984a8926a01cdd63 = $('         <div id="html_fbc9ec212e9e44e0984a8926a01cdd63"                 style="width: 100.0%; height: 100.0%;">                 10:30:00 AM  2015-02-27T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_efb051cb190b4cddbaa922fbf4589f85.setContent(html_fbc9ec212e9e44e0984a8926a01cdd63);
+            
+
+            marker_ad9dea0a9a894119a898460bab8f1840.bindPopup(popup_efb051cb190b4cddbaa922fbf4589f85);
+
+            
+        
+        
+            
+
+            var marker_5c7dc77355014aefa93d9e26fec0bcea = L.marker(
+                [42.2679,-71.0942],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_f318e38615e64d429856ef983f142d7a = L.popup({maxWidth: '300'});
+
+            
+                var html_a5779f32f36b4f02818f0025463f1dfd = $('         <div id="html_a5779f32f36b4f02818f0025463f1dfd"                 style="width: 100.0%; height: 100.0%;">                 12:02:00 PM  2015-02-26T00:00:00 Violation 71: HP-DV PLATE Fine: $120</div>                 ')[0];
+                popup_f318e38615e64d429856ef983f142d7a.setContent(html_a5779f32f36b4f02818f0025463f1dfd);
+            
+
+            marker_5c7dc77355014aefa93d9e26fec0bcea.bindPopup(popup_f318e38615e64d429856ef983f142d7a);
+
+            
+        
+        
+            
+
+            var marker_80baf30c639045b182a54b9ea2f6d11f = L.marker(
+                [42.3076,-71.0834],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_886316e8e0cd4806942d847e7bfa6e6e = L.popup({maxWidth: '300'});
+
+            
+                var html_34daae6c505f40ca9e6698eefe6cfbc7 = $('         <div id="html_34daae6c505f40ca9e6698eefe6cfbc7"                 style="width: 100.0%; height: 100.0%;">                 5:22:00 PM  2015-02-27T00:00:00 Violation 324: B - BUS STOP/STAND Fine: $100</div>                 ')[0];
+                popup_886316e8e0cd4806942d847e7bfa6e6e.setContent(html_34daae6c505f40ca9e6698eefe6cfbc7);
+            
+
+            marker_80baf30c639045b182a54b9ea2f6d11f.bindPopup(popup_886316e8e0cd4806942d847e7bfa6e6e);
+
+            
+        
+        
+            
+
+            var marker_507017836ab74fd99eade8697f0edeae = L.marker(
+                [42.3251,-71.0754],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_8b124456d50d49649e234d5bc286b8ca = L.popup({maxWidth: '300'});
+
+            
+                var html_1a074060b88445d39b25bb10d6e6d675 = $('         <div id="html_1a074060b88445d39b25bb10d6e6d675"                 style="width: 100.0%; height: 100.0%;">                 5:45:00 PM  2015-02-27T00:00:00 Violation 324: B - BUS STOP/STAND Fine: $100</div>                 ')[0];
+                popup_8b124456d50d49649e234d5bc286b8ca.setContent(html_1a074060b88445d39b25bb10d6e6d675);
+            
+
+            marker_507017836ab74fd99eade8697f0edeae.bindPopup(popup_8b124456d50d49649e234d5bc286b8ca);
+
+            
+        
+        
+            
+
+            var marker_be904118c2714d8e92f0e7cff148e8a1 = L.marker(
+                [42.3064,-71.0841],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_43083a6c69ee44e48fc2145227f7140d = L.popup({maxWidth: '300'});
+
+            
+                var html_8be40dda164a4a3b906a32254159f8ee = $('         <div id="html_8be40dda164a4a3b906a32254159f8ee"                 style="width: 100.0%; height: 100.0%;">                 5:14:00 PM  2015-02-23T00:00:00 Violation 71: HP-DV PLATE Fine: $120</div>                 ')[0];
+                popup_43083a6c69ee44e48fc2145227f7140d.setContent(html_8be40dda164a4a3b906a32254159f8ee);
+            
+
+            marker_be904118c2714d8e92f0e7cff148e8a1.bindPopup(popup_43083a6c69ee44e48fc2145227f7140d);
+
+            
+        
+        
+            
+
+            var marker_dbacb6b3999649afa39781cad0a53d9d = L.marker(
+                [42.3063,-71.0841],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_e94dcdf504e54b628cbceac599f610b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_05018bd253894682a212b737b95bb11a = $('         <div id="html_05018bd253894682a212b737b95bb11a"                 style="width: 100.0%; height: 100.0%;">                 5:18:00 PM  2015-02-27T00:00:00 Violation 71: HP-DV PLATE Fine: $120</div>                 ')[0];
+                popup_e94dcdf504e54b628cbceac599f610b5.setContent(html_05018bd253894682a212b737b95bb11a);
+            
+
+            marker_dbacb6b3999649afa39781cad0a53d9d.bindPopup(popup_e94dcdf504e54b628cbceac599f610b5);
+
+            
+        
+        
+            
+
+            var marker_5841377362564919883447899face47c = L.marker(
+                [42.3032,-71.0849],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_c91bf54df5b24d2e8019bfa323d7841e = L.popup({maxWidth: '300'});
+
+            
+                var html_28510fc4f9044391bd0c121939f36a46 = $('         <div id="html_28510fc4f9044391bd0c121939f36a46"                 style="width: 100.0%; height: 100.0%;">                 12:33:00 PM  2015-02-27T00:00:00 Violation 329: OVER POST LIM-ZONE B Fine: $25</div>                 ')[0];
+                popup_c91bf54df5b24d2e8019bfa323d7841e.setContent(html_28510fc4f9044391bd0c121939f36a46);
+            
+
+            marker_5841377362564919883447899face47c.bindPopup(popup_c91bf54df5b24d2e8019bfa323d7841e);
+
+            
+        
+        
+            
+
+            var marker_2673ebf8c5b548afb9a0e356898c13ee = L.marker(
+                [42.3031,-71.0849],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_1db280bb9eb243028ce66cf76e5dfa21 = L.popup({maxWidth: '300'});
+
+            
+                var html_e675c76a06124242b5c7bed7f584da58 = $('         <div id="html_e675c76a06124242b5c7bed7f584da58"                 style="width: 100.0%; height: 100.0%;">                 12:32:00 PM  2015-02-27T00:00:00 Violation 329: OVER POST LIM-ZONE B Fine: $25</div>                 ')[0];
+                popup_1db280bb9eb243028ce66cf76e5dfa21.setContent(html_e675c76a06124242b5c7bed7f584da58);
+            
+
+            marker_2673ebf8c5b548afb9a0e356898c13ee.bindPopup(popup_1db280bb9eb243028ce66cf76e5dfa21);
+
+            
+        
+        
+            
+
+            var marker_44597a693bf84805ae80558b7c53e569 = L.marker(
+                [42.3031,-71.0849],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_b711267c8ff94e2dab68b25d9ac90a0a = L.popup({maxWidth: '300'});
+
+            
+                var html_e47c28a3d49e4b04bcd9b81a1c2e3f65 = $('         <div id="html_e47c28a3d49e4b04bcd9b81a1c2e3f65"                 style="width: 100.0%; height: 100.0%;">                 12:20:00 PM  2015-02-24T00:00:00 Violation 329: OVER POST LIM-ZONE B Fine: $25</div>                 ')[0];
+                popup_b711267c8ff94e2dab68b25d9ac90a0a.setContent(html_e47c28a3d49e4b04bcd9b81a1c2e3f65);
+            
+
+            marker_44597a693bf84805ae80558b7c53e569.bindPopup(popup_b711267c8ff94e2dab68b25d9ac90a0a);
+
+            
+        
+        
+            
+
+            var marker_65743d21574c4de3978c974f7b6c7eda = L.marker(
+                [42.3031,-71.0849],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_ebd4529fb2f345898bf68f9d1ae8a3cf = L.popup({maxWidth: '300'});
+
+            
+                var html_881161ce4ec347c4823e96e0075272b1 = $('         <div id="html_881161ce4ec347c4823e96e0075272b1"                 style="width: 100.0%; height: 100.0%;">                 12:19:00 PM  2015-02-24T00:00:00 Violation 329: OVER POST LIM-ZONE B Fine: $25</div>                 ')[0];
+                popup_ebd4529fb2f345898bf68f9d1ae8a3cf.setContent(html_881161ce4ec347c4823e96e0075272b1);
+            
+
+            marker_65743d21574c4de3978c974f7b6c7eda.bindPopup(popup_ebd4529fb2f345898bf68f9d1ae8a3cf);
+
+            
+        
+        
+            
+
+            var marker_598b03e27c7c420eb76714256ce4265a = L.marker(
+                [42.3031,-71.0849],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_73944f311f714330bc953ebcae903b47 = L.popup({maxWidth: '300'});
+
+            
+                var html_2b10a00a4b554bf98e01c130794015db = $('         <div id="html_2b10a00a4b554bf98e01c130794015db"                 style="width: 100.0%; height: 100.0%;">                 12:18:00 PM  2015-02-24T00:00:00 Violation 329: OVER POST LIM-ZONE B Fine: $25</div>                 ')[0];
+                popup_73944f311f714330bc953ebcae903b47.setContent(html_2b10a00a4b554bf98e01c130794015db);
+            
+
+            marker_598b03e27c7c420eb76714256ce4265a.bindPopup(popup_73944f311f714330bc953ebcae903b47);
+
+            
+        
+        
+            
+
+            var marker_f76bcedc8788440ca448c2ad54530827 = L.marker(
+                [42.3031,-71.0849],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_98909eb64c4a4111814c4def257f8589 = L.popup({maxWidth: '300'});
+
+            
+                var html_690958abae7a4881a079d932bb60f6de = $('         <div id="html_690958abae7a4881a079d932bb60f6de"                 style="width: 100.0%; height: 100.0%;">                 12:20:00 PM  2015-02-24T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_98909eb64c4a4111814c4def257f8589.setContent(html_690958abae7a4881a079d932bb60f6de);
+            
+
+            marker_f76bcedc8788440ca448c2ad54530827.bindPopup(popup_98909eb64c4a4111814c4def257f8589);
+
+            
+        
+        
+            
+
+            var marker_f0915baea36a43e5b1f99f1c30721506 = L.marker(
+                [42.3029,-71.085],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_546c9431d842484aa1d5e96b813691ff = L.popup({maxWidth: '300'});
+
+            
+                var html_7b700ac3eed94787b32716264484a97e = $('         <div id="html_7b700ac3eed94787b32716264484a97e"                 style="width: 100.0%; height: 100.0%;">                 3:57:00 PM  2015-02-27T00:00:00 Violation 14: NO STOP OR STAND Fine: $75</div>                 ')[0];
+                popup_546c9431d842484aa1d5e96b813691ff.setContent(html_7b700ac3eed94787b32716264484a97e);
+            
+
+            marker_f0915baea36a43e5b1f99f1c30721506.bindPopup(popup_546c9431d842484aa1d5e96b813691ff);
+
+            
+        
+        
+            
+
+            var marker_69d14c4a54804e9d8aee3855e62f99c3 = L.marker(
+                [42.3029,-71.085],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_a2d60ea3301f413ab524b143b0de837f = L.popup({maxWidth: '300'});
+
+            
+                var html_664e2313476441d892620767f5946186 = $('         <div id="html_664e2313476441d892620767f5946186"                 style="width: 100.0%; height: 100.0%;">                 12:09:00 PM  2015-02-27T00:00:00 Violation 14: NO STOP OR STAND Fine: $75</div>                 ')[0];
+                popup_a2d60ea3301f413ab524b143b0de837f.setContent(html_664e2313476441d892620767f5946186);
+            
+
+            marker_69d14c4a54804e9d8aee3855e62f99c3.bindPopup(popup_a2d60ea3301f413ab524b143b0de837f);
+
+            
+        
+        
+            
+
+            var marker_724879d2cd5b44489fdb6ac0022dd600 = L.marker(
+                [42.3029,-71.085],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_bb0559783f7942fa8caeade82594c9d8 = L.popup({maxWidth: '300'});
+
+            
+                var html_fe1a06361a5e4bb0889af90f88caf07b = $('         <div id="html_fe1a06361a5e4bb0889af90f88caf07b"                 style="width: 100.0%; height: 100.0%;">                 11:13:00 AM  2015-02-24T00:00:00 Violation 14: NO STOP OR STAND Fine: $75</div>                 ')[0];
+                popup_bb0559783f7942fa8caeade82594c9d8.setContent(html_fe1a06361a5e4bb0889af90f88caf07b);
+            
+
+            marker_724879d2cd5b44489fdb6ac0022dd600.bindPopup(popup_bb0559783f7942fa8caeade82594c9d8);
+
+            
+        
+        
+            
+
+            var marker_8764cde73a234c8ca9a16af0e452e946 = L.marker(
+                [42.3029,-71.085],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_3f8cc13ac7df4111ae803b1519ecee92 = L.popup({maxWidth: '300'});
+
+            
+                var html_3daacd14cc054519b8230846133719af = $('         <div id="html_3daacd14cc054519b8230846133719af"                 style="width: 100.0%; height: 100.0%;">                 3:57:00 PM  2015-02-27T00:00:00 Violation 14: NO STOP OR STAND Fine: $75</div>                 ')[0];
+                popup_3f8cc13ac7df4111ae803b1519ecee92.setContent(html_3daacd14cc054519b8230846133719af);
+            
+
+            marker_8764cde73a234c8ca9a16af0e452e946.bindPopup(popup_3f8cc13ac7df4111ae803b1519ecee92);
+
+            
+        
+        
+            
+
+            var marker_65e60dd4ee3c4c96a3a7cb01020dfe31 = L.marker(
+                [42.3026,-71.0851],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_f9538b7c8bbb4121babb6003aa05d1be = L.popup({maxWidth: '300'});
+
+            
+                var html_77e94c9fb22c4268b367b425e4028f66 = $('         <div id="html_77e94c9fb22c4268b367b425e4028f66"                 style="width: 100.0%; height: 100.0%;">                 3:56:00 PM  2015-02-27T00:00:00 Violation 324: B - BUS STOP/STAND Fine: $100</div>                 ')[0];
+                popup_f9538b7c8bbb4121babb6003aa05d1be.setContent(html_77e94c9fb22c4268b367b425e4028f66);
+            
+
+            marker_65e60dd4ee3c4c96a3a7cb01020dfe31.bindPopup(popup_f9538b7c8bbb4121babb6003aa05d1be);
+
+            
+        
+        
+            
+
+            var marker_853073f68dfc4d829232f233a5c1206f = L.marker(
+                [42.3006,-71.0858],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_1c5e528a05514c099d6baea2c1a37cf3 = L.popup({maxWidth: '300'});
+
+            
+                var html_8f6d00e8f9bd4b328f4a05ea5adbd285 = $('         <div id="html_8f6d00e8f9bd4b328f4a05ea5adbd285"                 style="width: 100.0%; height: 100.0%;">                 11:57:00 AM  2015-02-25T00:00:00 Violation 324: B - BUS STOP/STAND Fine: $100</div>                 ')[0];
+                popup_1c5e528a05514c099d6baea2c1a37cf3.setContent(html_8f6d00e8f9bd4b328f4a05ea5adbd285);
+            
+
+            marker_853073f68dfc4d829232f233a5c1206f.bindPopup(popup_1c5e528a05514c099d6baea2c1a37cf3);
+
+            
+        
+        
+            
+
+            var marker_4036d58a92c14731a67eb8b93dc5d7ea = L.marker(
+                [42.2964,-71.0871],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_441c5b1155d3416bbe92430afb901c47 = L.popup({maxWidth: '300'});
+
+            
+                var html_4c88cdabcc9b4f06a5b4c7e5c16456bf = $('         <div id="html_4c88cdabcc9b4f06a5b4c7e5c16456bf"                 style="width: 100.0%; height: 100.0%;">                 12:55:00 PM  2015-02-26T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_441c5b1155d3416bbe92430afb901c47.setContent(html_4c88cdabcc9b4f06a5b4c7e5c16456bf);
+            
+
+            marker_4036d58a92c14731a67eb8b93dc5d7ea.bindPopup(popup_441c5b1155d3416bbe92430afb901c47);
+
+            
+        
+        
+            
+
+            var marker_7831035990174259a1c646c148aeb804 = L.marker(
+                [42.2964,-71.0871],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_2166506815b94f26878f25d64c1ce1aa = L.popup({maxWidth: '300'});
+
+            
+                var html_8803c34ae7784d47b017243696c6f003 = $('         <div id="html_8803c34ae7784d47b017243696c6f003"                 style="width: 100.0%; height: 100.0%;">                 12:56:00 PM  2015-02-26T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_2166506815b94f26878f25d64c1ce1aa.setContent(html_8803c34ae7784d47b017243696c6f003);
+            
+
+            marker_7831035990174259a1c646c148aeb804.bindPopup(popup_2166506815b94f26878f25d64c1ce1aa);
+
+            
+        
+        
+            
+
+            var marker_f9554e52859e455db085db71b99c22e0 = L.marker(
+                [42.2964,-71.0871],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_4deeb15a8cd545dfaa0248931a381e4e = L.popup({maxWidth: '300'});
+
+            
+                var html_c2465e64e5924246839804cfdfa5bc82 = $('         <div id="html_c2465e64e5924246839804cfdfa5bc82"                 style="width: 100.0%; height: 100.0%;">                 12:56:00 PM  2015-02-26T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_4deeb15a8cd545dfaa0248931a381e4e.setContent(html_c2465e64e5924246839804cfdfa5bc82);
+            
+
+            marker_f9554e52859e455db085db71b99c22e0.bindPopup(popup_4deeb15a8cd545dfaa0248931a381e4e);
+
+            
+        
+        
+            
+
+            var marker_e0e1c8669ad2498ea59a21960223aebb = L.marker(
+                [42.3114,-71.0811],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_a5586cbd0dc74a769792ea5df9d45c4b = L.popup({maxWidth: '300'});
+
+            
+                var html_38d675536f304500916ec6243ebd03e9 = $('         <div id="html_38d675536f304500916ec6243ebd03e9"                 style="width: 100.0%; height: 100.0%;">                 5:21:00 PM  2015-02-23T00:00:00 Violation 314: CROSSWALK Fine: $85</div>                 ')[0];
+                popup_a5586cbd0dc74a769792ea5df9d45c4b.setContent(html_38d675536f304500916ec6243ebd03e9);
+            
+
+            marker_e0e1c8669ad2498ea59a21960223aebb.bindPopup(popup_a5586cbd0dc74a769792ea5df9d45c4b);
+
+            
+        
+        
+            
+
+            var marker_31c0dba3ddb342e7addab2097df08f28 = L.marker(
+                [42.2995,-71.0864],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_a79b65a1dd4b45ff9f42987b190640bb = L.popup({maxWidth: '300'});
+
+            
+                var html_06125ab4c9cd4cfbbbff2d78409157e3 = $('         <div id="html_06125ab4c9cd4cfbbbff2d78409157e3"                 style="width: 100.0%; height: 100.0%;">                 12:17:00 PM  2015-02-24T00:00:00 Violation 51: W/IN 20 FT INTERSECT Fine: $40</div>                 ')[0];
+                popup_a79b65a1dd4b45ff9f42987b190640bb.setContent(html_06125ab4c9cd4cfbbbff2d78409157e3);
+            
+
+            marker_31c0dba3ddb342e7addab2097df08f28.bindPopup(popup_a79b65a1dd4b45ff9f42987b190640bb);
+
+            
+        
+        
+            
+
+            var marker_8e83a535dad54854ac7bda595d456094 = L.marker(
+                [42.2816,-71.0922],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_81ab57987c0f4396a09c978d03ffe1f8 = L.popup({maxWidth: '300'});
+
+            
+                var html_cf998afcf097495f8c0a473cfdd5dce1 = $('         <div id="html_cf998afcf097495f8c0a473cfdd5dce1"                 style="width: 100.0%; height: 100.0%;">                 4:38:00 PM  2015-02-27T00:00:00 Violation 14: NO STOP OR STAND Fine: $75</div>                 ')[0];
+                popup_81ab57987c0f4396a09c978d03ffe1f8.setContent(html_cf998afcf097495f8c0a473cfdd5dce1);
+            
+
+            marker_8e83a535dad54854ac7bda595d456094.bindPopup(popup_81ab57987c0f4396a09c978d03ffe1f8);
+
+            
+        
+        
+            
+
+            var marker_73b8c695e19b458281f6ba4837d85c2b = L.marker(
+                [42.2949,-71.0878],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_c2ca9d43ec2948ecaa70ea524dbd8293 = L.popup({maxWidth: '300'});
+
+            
+                var html_9002b700c9c1418aad3b752d21fb5d8c = $('         <div id="html_9002b700c9c1418aad3b752d21fb5d8c"                 style="width: 100.0%; height: 100.0%;">                 12:19:00 PM  2015-02-27T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_c2ca9d43ec2948ecaa70ea524dbd8293.setContent(html_9002b700c9c1418aad3b752d21fb5d8c);
+            
+
+            marker_73b8c695e19b458281f6ba4837d85c2b.bindPopup(popup_c2ca9d43ec2948ecaa70ea524dbd8293);
+
+            
+        
+        
+            
+
+            var marker_1e14772e7f9c45e190f69dcf69627160 = L.marker(
+                [42.2949,-71.0878],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_cb26c89bb6184687ad279c8099671eff = L.popup({maxWidth: '300'});
+
+            
+                var html_cbef1cc760034688a8de7ea672b1aa2f = $('         <div id="html_cbef1cc760034688a8de7ea672b1aa2f"                 style="width: 100.0%; height: 100.0%;">                 5:05:00 PM  2015-02-27T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_cb26c89bb6184687ad279c8099671eff.setContent(html_cbef1cc760034688a8de7ea672b1aa2f);
+            
+
+            marker_1e14772e7f9c45e190f69dcf69627160.bindPopup(popup_cb26c89bb6184687ad279c8099671eff);
+
+            
+        
+        
+            
+
+            var marker_2f086384cd81462ca3cb08922923a786 = L.marker(
+                [42.2949,-71.0878],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_e9d894da6d6345a8b34d481c960a4ac2 = L.popup({maxWidth: '300'});
+
+            
+                var html_3ee84394b19949469e225c3aaaaabb1d = $('         <div id="html_3ee84394b19949469e225c3aaaaabb1d"                 style="width: 100.0%; height: 100.0%;">                 12:21:00 PM  2015-02-27T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_e9d894da6d6345a8b34d481c960a4ac2.setContent(html_3ee84394b19949469e225c3aaaaabb1d);
+            
+
+            marker_2f086384cd81462ca3cb08922923a786.bindPopup(popup_e9d894da6d6345a8b34d481c960a4ac2);
+
+            
+        
+        
+            
+
+            var marker_b69845cf93904a90a3c6521c32e9aa0f = L.marker(
+                [42.2949,-71.0878],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_3be01c88b4e447e4b24bb8a288a60694 = L.popup({maxWidth: '300'});
+
+            
+                var html_06c9b777112641f181ef3bb049d30b57 = $('         <div id="html_06c9b777112641f181ef3bb049d30b57"                 style="width: 100.0%; height: 100.0%;">                 12:10:00 PM  2015-02-24T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_3be01c88b4e447e4b24bb8a288a60694.setContent(html_06c9b777112641f181ef3bb049d30b57);
+            
+
+            marker_b69845cf93904a90a3c6521c32e9aa0f.bindPopup(popup_3be01c88b4e447e4b24bb8a288a60694);
+
+            
+        
+        
+            
+
+            var marker_54326ae8b0e545f6876b4a7b25be1a25 = L.marker(
+                [42.2949,-71.0878],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_c6c18373417f4df49ae9f4eb47ac890c = L.popup({maxWidth: '300'});
+
+            
+                var html_6980225505914ed7b6567516f5f28b9d = $('         <div id="html_6980225505914ed7b6567516f5f28b9d"                 style="width: 100.0%; height: 100.0%;">                 11:51:00 AM  2015-02-25T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_c6c18373417f4df49ae9f4eb47ac890c.setContent(html_6980225505914ed7b6567516f5f28b9d);
+            
+
+            marker_54326ae8b0e545f6876b4a7b25be1a25.bindPopup(popup_c6c18373417f4df49ae9f4eb47ac890c);
+
+            
+        
+        
+            
+
+            var marker_b3015f2115064e0eb402e2ecf91dfce0 = L.marker(
+                [42.2949,-71.0878],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_5ca21e735db14641a76ebbf175ff510a = L.popup({maxWidth: '300'});
+
+            
+                var html_2135cf8260574d32a0354563e3488431 = $('         <div id="html_2135cf8260574d32a0354563e3488431"                 style="width: 100.0%; height: 100.0%;">                 12:20:00 PM  2015-02-27T00:00:00 Violation 311: DOUBLE PKG-ZONE B Fine: $30</div>                 ')[0];
+                popup_5ca21e735db14641a76ebbf175ff510a.setContent(html_2135cf8260574d32a0354563e3488431);
+            
+
+            marker_b3015f2115064e0eb402e2ecf91dfce0.bindPopup(popup_5ca21e735db14641a76ebbf175ff510a);
+
+            
+        
+        
+            
+
+            var marker_41ab81563443405cb8fa1a4e9eff171f = L.marker(
+                [42.3083,-71.0832],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_7936d11495254ecab1d9c9de3e3be45b = L.popup({maxWidth: '300'});
+
+            
+                var html_499173bb8a7647b9a63fea0f39f45763 = $('         <div id="html_499173bb8a7647b9a63fea0f39f45763"                 style="width: 100.0%; height: 100.0%;">                 7:32:00 AM  2015-02-25T00:00:00 Violation 14: NO STOP OR STAND Fine: $75</div>                 ')[0];
+                popup_7936d11495254ecab1d9c9de3e3be45b.setContent(html_499173bb8a7647b9a63fea0f39f45763);
+            
+
+            marker_41ab81563443405cb8fa1a4e9eff171f.bindPopup(popup_7936d11495254ecab1d9c9de3e3be45b);
+
+            
+        
+        
+            
+
+            var marker_63a815e1f03c436fa60567a24ed8d473 = L.marker(
+                [42.3083,-71.0832],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_8f0c0b62910243cc9d47c144b8efcd00 = L.popup({maxWidth: '300'});
+
+            
+                var html_7936bb60763c49d38e0a384ed6dfed4a = $('         <div id="html_7936bb60763c49d38e0a384ed6dfed4a"                 style="width: 100.0%; height: 100.0%;">                 7:34:00 AM  2015-02-25T00:00:00 Violation 14: NO STOP OR STAND Fine: $75</div>                 ')[0];
+                popup_8f0c0b62910243cc9d47c144b8efcd00.setContent(html_7936bb60763c49d38e0a384ed6dfed4a);
+            
+
+            marker_63a815e1f03c436fa60567a24ed8d473.bindPopup(popup_8f0c0b62910243cc9d47c144b8efcd00);
+
+            
+        
+        
+            
+
+            var marker_031500acdfc24e68ad399e58578b40f8 = L.marker(
+                [42.3004,-71.0861],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_b5968f45b3574f738a38e5bf2f0cd153 = L.popup({maxWidth: '300'});
+
+            
+                var html_773cb735a5894cd986683ba1ef5cd829 = $('         <div id="html_773cb735a5894cd986683ba1ef5cd829"                 style="width: 100.0%; height: 100.0%;">                 9:33:00 AM  2015-02-24T00:00:00 Violation 314: CROSSWALK Fine: $85</div>                 ')[0];
+                popup_b5968f45b3574f738a38e5bf2f0cd153.setContent(html_773cb735a5894cd986683ba1ef5cd829);
+            
+
+            marker_031500acdfc24e68ad399e58578b40f8.bindPopup(popup_b5968f45b3574f738a38e5bf2f0cd153);
+
+            
+        
+        
+            
+
+            var marker_7baa5a8043ed46de8bc1f23f178f40bd = L.marker(
+                [42.3137,-71.0794],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_2b1ae372fc11495fad579320ada99b14 = L.popup({maxWidth: '300'});
+
+            
+                var html_ecd0cf5223a9472fa90b66bd0240235e = $('         <div id="html_ecd0cf5223a9472fa90b66bd0240235e"                 style="width: 100.0%; height: 100.0%;">                 12:28:00 AM  2015-02-24T00:00:00 Violation 14: NO STOP OR STAND Fine: $75</div>                 ')[0];
+                popup_2b1ae372fc11495fad579320ada99b14.setContent(html_ecd0cf5223a9472fa90b66bd0240235e);
+            
+
+            marker_7baa5a8043ed46de8bc1f23f178f40bd.bindPopup(popup_2b1ae372fc11495fad579320ada99b14);
+
+            
+        
+        
+            
+
+            var marker_1414e9c05fc14f54b306d26a567471df = L.marker(
+                [42.3213,-71.0775],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9d8a1fe8815a4ac4ab14fda5c412cc3c);
+            
+        
+            
+            var popup_cb690ce77cb64b18adaec45e9dfb4548 = L.popup({maxWidth: '300'});
+
+            
+                var html_1c74d16455804c37a0c80201c5373f5b = $('         <div id="html_1c74d16455804c37a0c80201c5373f5b"                 style="width: 100.0%; height: 100.0%;">                 5:51:00 PM  2015-02-23T00:00:00 Violation 314: CROSSWALK Fine: $85</div>                 ')[0];
+                popup_cb690ce77cb64b18adaec45e9dfb4548.setContent(html_1c74d16455804c37a0c80201c5373f5b);
+            
+
+            marker_1414e9c05fc14f54b306d26a567471df.bindPopup(popup_cb690ce77cb64b18adaec45e9dfb4548);
+
+            
+        
+        
+        
+        </script>
+        
