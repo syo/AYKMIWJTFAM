@@ -2,13 +2,10 @@ import json
 import sys
 from sodapy import Socrata
 import folium
-#from tkinter import *
+import webbrowser
 
 dataset_id = 'qbxx-ev3s'
 results = []
-
-#client = Socrata(api_endpoint, app_token)
-#jsonelem[elem_name][row_of_json][index_of_list]
 
 def reslen():
     ct = 0
@@ -33,8 +30,11 @@ def printResults():
                 print("Geolocation found: ({} , {})".format(row['lat'],row['long']))
                 markers.append(([row['lat'],row['long']], to_print))
             i += 1
+    print("{} Results Found".format(reslen()))
+    print("Making Map of {} markers.".format(len(markers)))
     makeMap(markers)
-    print(reslen() + " Results Found")
+    print("Opening Map")
+    webbrowser.open("tickets.html",2)
 
 def makeMap(markers):
     map_1 = folium.Map(location=[42.350489, -71.069099], zoom_start=10)
@@ -54,3 +54,16 @@ def queryStreet(street):
 if __name__ == '__main__':
    queryStreet(input('Enter the street you received the ticket on: ').upper())
    printResults()
+   sys.exit()
+
+   #streetname = enterbox("Enter street name: ", "Are You Kidding Me?")
+   #TODO: add gui implementation
+   '''root = Tk()
+   label = Label( root, text="Enter street name: ")
+   E = Entry(root, bd =5)
+   print E.get()
+   submit = Button(root, text ="Submit", command = getDate)
+   label.pack()
+   E.pack()
+   submit.pack(side =BOTTOM)
+   root.mainloop()'''
